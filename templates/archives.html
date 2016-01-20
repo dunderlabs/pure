@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
-{% block title %}all posts // {{ super() }}{% endblock title %}
-{% block pagetitle %}all posts{% endblock pagetitle %}
+{% block title %}Todos os posts // {{ super() }}{% endblock title %}
+{% block pagetitle %}Todos os posts{% endblock pagetitle %}
 
 
 {% block content %}
@@ -8,7 +8,7 @@
     {% include 'sidebar.html' %}
     <div class="pure-u-1">
         <div class="content">
-            <h1 class="content-subhead">All posts</h1>
+            <h1 class="content-subhead">Todos os posts</h1>
             {% for article in dates %}
                 <div class="archive-item">
                     <a href="{{ SITEURL }}/{{ article.author.url }}" title="See posts by {{ article.author }}">
